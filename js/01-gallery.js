@@ -17,25 +17,7 @@ const markUp = galleryItems
   </a>
 </div>`
   )
-  .join("");
-
-/* const markUp = galleryItems.reduce(
-  (acc, { original, preview, description }) => {
-    return `
-    ${acc}
-    <div class="gallery__item">
-      <a class="gallery__link" href="${original}">
-        <img
-          class="gallery__image"
-          src="${preview}"
-          data-source="${original}"
-          alt="${description}"
-        />
-      </a>
-    </div>`;
-    },
-  ""
-); */
+  .join(""); 
 
 const gallery = document.querySelector(".gallery");
 
