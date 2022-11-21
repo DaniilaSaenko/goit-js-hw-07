@@ -30,8 +30,9 @@ function oneImgContenerClick(event) {
     return;
   }
 
-  const selectedImage = event.target.getAttribute("data-source");
-
+  const selectedImage = event.target.dataset.source;
+  /* const selectedImage = event.target.getAttribute("data-source"); */
+  
   const instance = basicLightbox.create(`
     <img src="${selectedImage}" width="800" height="600">
 `);
